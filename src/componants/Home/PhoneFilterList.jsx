@@ -33,7 +33,6 @@ export default function PhoneFilterList() {
 
     if (search) params.append("keyword", search); // server uses keyword not search
     if (category) params.append("category", category);
-    console.log(category);
     params.append("price[gte]", minPrice);
     params.append("price[lte]", maxPrice);
 

@@ -167,10 +167,6 @@ export default function Navbar() {
 
           className={""}
 
-          onMenuOpen={() => console.log('Menu opened')}
-
-          onMenuClose={() => console.log('Menu closed')}
-
         />
 
 

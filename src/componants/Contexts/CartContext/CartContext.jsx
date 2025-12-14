@@ -97,7 +97,6 @@ export default function UserCartContext({ children }) {
 
             return true
         }).catch((err) => {
-            console.log(err);
 
             return false
 

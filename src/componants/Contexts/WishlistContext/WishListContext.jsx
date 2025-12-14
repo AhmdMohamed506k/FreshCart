@@ -41,7 +41,6 @@ export default function UserWishListContext({ children }) {
 
             // SetCartID(res)
         }).catch((err) => {
-            console.log(err);
 
         })
 

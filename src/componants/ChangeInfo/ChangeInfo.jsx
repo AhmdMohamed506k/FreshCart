@@ -74,7 +74,6 @@ export default function ChangeInfo() {
             }
         }).then((x) => {
 
-            console.log(x);
 
             successMassage("Updated Successfully");
             SetIsClicked(false)

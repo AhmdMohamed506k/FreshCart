@@ -1,0 +1,123 @@
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1500px !important;
+  }
+
+   .bannerheader{
+    height: 15rem;
+    position: relative;
+    top: 500px;
+ 
+  }
+  .MainBanner{
+    top: 200px;
+    height: 65vh;
+    width: 70%;
+
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+  .bannerheader{
+    height: 15rem;
+    position: relative;
+    top: 500px;
+ 
+  }
+  .MainBanner{
+    top: 240px;
+   height: auto;
+    width: auto;
+  }
+ 
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+  .bannerheader{
+    height: 15rem;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+   .bannerheader{
+    height: 9rem;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+  .container {
+    max-width: 475px;
+  }
+  .bannerheader {
+    height: 2rem;
+  }
+  .MainBanner{
+    width: 120%;
+    margin-left: -3rem;
+   
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+  .bannerheader {
+    height: 0rem;
+  }
+   .MainBanner{
+    width: 110%;
+    margin-left: -1.5rem;
+   
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .bannerheader {
+    height: 5rem;
+  }
+.bannerheader{
+    height: 10rem;
+
+    top: 550px;
+    border: 1px saddlebrown solid;
+ 
+  }
+  .MainBanner{
+    top: 0px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+}
+
+
+
+/* xs */
+

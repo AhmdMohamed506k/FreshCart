@@ -1,0 +1,167 @@
+/* The desktop-first pre-defined media queries: */
+
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.HeroSection {
+  background-image: url("../../../../../assets/body_bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#FreshSpan {
+  position: relative;
+  background: -o-linear-gradient(
+    359deg,
+    #76f5bc 4.7%,
+    rgb(10, 145, 55) 100.85%,
+    #ebeef9 52.07%
+  );
+  background: linear-gradient(
+    91deg,
+    #76f5bc 4.7%,
+    #0a9137 100.85%,
+    #ebeef9 52.07%
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#FreshSvg {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin-left: 0;
+}
+.LoginButton {
+  position: relative;
+  z-index: 2000;
+  border-radius: 100px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 10px 50px;
+}
+.registerButton {
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 10px 50px;
+   position: relative;
+  z-index: 5000;
+}
+
+
+
+
+
+
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+  .HeroSection p {
+    width: 79%;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+  .HeroSection p {
+    width: 100%;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+  .HeroSection p {
+    width: 100%;
+  }
+  .LoginButton {
+    font-size: 14px;
+    padding: 7px 40px;
+  }
+  .registerButton {
+    font-size: 14px;
+    padding: 7px 40px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+  .HeroSection h1 {
+    font-size: 40px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+  #FreshSvg {
+    width: 80%;
+  }
+  .HeroSection h1 {
+    font-size: 33px;
+  }
+  .ButtonsGroup {
+    flex-direction: column;
+  }
+  .LoginButton {
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding: 7px 40px;
+  }
+  .registerButton {
+    font-size: 14px;
+    padding: 7px 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #FreshSvg {
+    width: 80%;
+  }
+  .HeroSection h1 {
+    font-size: 23px;
+  }
+  .LoginButton {
+    font-size: 10px;
+    padding: 7px 40px;
+  }
+  .registerButton {
+    font-size: 10px;
+    padding: 7px 40px;
+  }
+}
+
+/* ======================================= */

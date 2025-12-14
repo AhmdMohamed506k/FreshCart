@@ -1,0 +1,13 @@
+/* Hide scrollbar for modern browsers */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.HappyClients{
+  background-image: url(../../../../assets/body_bg.png);
+  background-position: center;
+  background-size: cover;
+}

@@ -1,0 +1,9 @@
+input:focus {
+    border: 1px solid #24e383 !important;
+
+    outline: none;
+}
+#loadingBackGround{
+
+    background-color: rgba(00, 00, 00, 0.5);
+}

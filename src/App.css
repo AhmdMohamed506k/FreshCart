@@ -1,0 +1,143 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import "tailwindcss";
+
+
+
+
+@layer base {
+  body {
+    @apply relative font-sans h-screen 
+       overflow-x-hidden ;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 ,
+p{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+}
+
+a,
+a:hover {
+  font-family: "Quicksand", sans-serif;
+ 
+ 
+
+}
+
+nav {
+  width: 100%;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: all 0.55s;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.stickyNavUp {
+  transition: all 0.55s;
+  width: 100%;
+  border-radius: 20px;
+  transform: translateY(-50px);
+}
+.stickyNavDown{
+  width: 99%;
+   transform: translateY(10px);
+  border-radius: 22px;
+  background-color: #0a9137;
+}
+
+.phonelistOpen{
+   overflow: hidden;
+}
+
+
+
+/* 
+.active{
+  position: relative;
+}
+.active::after{
+    content:"";
+    position: absolute;
+    
+    height: 3px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background-color: antiquewhite;
+} 
+    
+
+:root {
+    --main-color: rgb(8, 152, 8);
+    --light-color: #f0f3f2;
+    --shadow: rgba(145, 158, 171, .2) 0px 2px 4px -1px, rgba(145, 158, 171, .14) 0px 4px 5px 0px, rgba(145, 158, 171, .12) 0px 1px 10px 0px;
+    --font-family: 'Encode Sans Expanded', sans-serif;
+    --rating-color: #ffc908;
+ 
+}
+
+
+
+.rating-color {
+    color: var(--rating-color);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.product:hover {
+    box-shadow: var(--shadow);
+    border: solid 1px var(--main-color);
+}
+
+.product .btn {
+    transition: transform 1s, opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.product:hover .btn {
+    opacity: 1;
+    transform: translateY(0%);
+
+}
+
+.font-sm {
+    font-size: 14px;
+}
+
+.text-main {
+    color: var(--main-color);
+}
+
+.bg-main {
+    background-color: var(--main-color) !important;
+}
+
+.bg-main-light {
+    background-color: var(--light-color) !important;
+}
+
+.loading {
+    z-index: 405;
+}
+
+
+*/

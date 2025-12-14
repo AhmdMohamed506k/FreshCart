@@ -1,0 +1,115 @@
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.DiscountSection{
+    height: 60vh;
+    padding-top: 55px;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+  .DiscountSectionTitle{
+    font-size: 2.35rem;
+   
+    margin-left: -32px;
+  }
+  .OrderNowWord{
+    margin-left: 0px;
+  }
+
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+   .DiscountSectionTitle{
+    margin-left: 20px;
+   }
+
+    .sectionDescription{
+    font-size: 1.2rem;
+    width: 100%;
+    line-height: 30px;
+     margin:0px auto;
+  
+
+  }
+ 
+  .sectionColumn2{
+    text-align: center;
+   
+    width: 75%;
+   margin:0px auto;
+
+
+  }
+} 
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+  
+  .sectionColumn2{
+  
+   
+    width:100%;
+   margin:0px auto;
+
+
+  }
+  .DiscountSection{
+    height: 110%;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+
+}
+
+
+
+

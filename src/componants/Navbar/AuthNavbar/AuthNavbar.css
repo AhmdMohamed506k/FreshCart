@@ -1,0 +1,14 @@
+
+
+#OrderBtn:hover #OrderBtnText{
+    color: green;
+    transition: all 0.3s;
+}
+#LogoutBtn:hover #LogoutBtnText{
+    color: green;
+    transition: all 0.3s;
+}
+#UserinfoBtn:hover #UserInfoBtnText{
+    color: green;
+    transition: all 0.3s;
+}

@@ -1,0 +1,9 @@
+.RegisterSection{
+      background-image: url("../../../assets/body_bg.png");
+  background-size: cover;
+  background-position: center;
+}
+.RegisterFormLeftSection button{
+  
+    transition: all 0.3s;
+}

@@ -1,0 +1,18 @@
+.CardBody{
+box-shadow: -3px 2px 11px -24px rgba(0,0,0,0.75);
+-webkit-box-shadow: -3px 2px 11px -24px rgba(0,0,0,0.75);
+-moz-box-shadow: -3px 2px 11px -24px rgba(0,0,0,0.75);
+}
+
+
+/* xs */
+@media (max-width: 450px) {
+  .CardContainer{
+   grid-template-columns: repeat(1, minmax(0, 1fr))
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+
+}

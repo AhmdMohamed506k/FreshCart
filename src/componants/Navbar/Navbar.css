@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+
+@media screen and (max-width: 320px) { /* Styles for iPhone 5 and smaller phones */
+    
+   .MainNavContainer{
+    display: flex;
+    justify-content: space-between !important;
+    flex-wrap: nowrap;
+
+   } 
+
+    .navLogo{
+       width: 60%;
+    
+    }
+    .PhoneListBtn{
+        width:36%;
+    }
+
+      
+}

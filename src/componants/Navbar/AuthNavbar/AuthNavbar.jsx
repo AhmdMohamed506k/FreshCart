@@ -90,7 +90,7 @@ const AuthNavbar = () => {
     }
     function handleCategorySelect(categoryName) {
         updateFilters({ category: categoryName });
-        Navegait("/")
+        Navegait("/Home")
         setOpenCategoriesMenu(false);
         setSubOpenCategoriesMenu(false);
     }
@@ -98,7 +98,7 @@ const AuthNavbar = () => {
     function HandelLogOut() {
         localStorage.removeItem("Token");
         setToken(null);
-        Navegait("/Login");
+        Navegait("/MainHome");
     }
     // ===========================SearchBar==================================
     const handleSearchChange = (e) => {

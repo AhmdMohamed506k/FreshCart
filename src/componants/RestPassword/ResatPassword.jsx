@@ -129,7 +129,7 @@ export default function ResatPassword() {
 
     await axios.post("https://ecommerce.routemisr.com/api/v1/auth/verifyResetCode", val).then((res) => {
 
-      SetisCodeClicked(false);
+      SetisCodeClicked(true);
       SetIsClicked(false);
       successMassage(' Success 🎉');
 

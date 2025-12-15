@@ -57,7 +57,7 @@ export default function ProductDetails() {
         if (flag) {
             toast.success('Added Successfully');
             setTimeout(() => {
-                navigate("/")
+                navigate("/Home")
             }, 1300);
         } else {
             toast.error('This is an error!');

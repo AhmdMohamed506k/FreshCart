@@ -39,6 +39,7 @@ function App() {
         // Public Pages
         { index: true, element: istoken ? <Home /> : <MainHome /> },
         { path: "Login", element: <Login /> },
+        { path: "MainHome", element: <MainHome /> },
         { path: "Register", element: <Register /> },
         { path: "Brands", element: <Brands /> },
         { path: "ContactPage", element: <ContactPage /> },
@@ -53,6 +54,7 @@ function App() {
           children: [
             { path: "Home", element: <Home /> },
             { path: "Cart", element: <Cart /> },
+            { path: "MainHome", element: <MainHome /> },
             { path: "Wishlist", element: <Wishlist /> },
             { path: "PlaceOrder", element: <PlaceOrder /> },
             { path: "allorders", element: <Allorders /> },

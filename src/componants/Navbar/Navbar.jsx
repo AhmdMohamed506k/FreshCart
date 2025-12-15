@@ -87,7 +87,7 @@ export default function Navbar() {
 
 
         {/* Main NavBar Logo */}
-        <Link to={"/"} className=" navLogo flex items-center space-x-3 rtl:space-x-reverse">
+        <Link to={"/MainHome"} className=" navLogo flex items-center space-x-3 rtl:space-x-reverse">
           <img src={navImg} className='w-50 text-white' alt="MainTile" />
         </Link>
 

@@ -10,7 +10,7 @@ import FreshCartLoader from "../Loading/Loader/Loader";
 
 
 
-export default function Allorders() {
+export default function AllOrders() {
     // ======================UseStates===========================
     const [userOrders, setUserOrders] = useState([]); // initialize as array
     const [loading, setLoading] = useState(true);

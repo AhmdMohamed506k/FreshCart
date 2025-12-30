@@ -1,29 +1,29 @@
 import { useState } from 'react'
 import './App.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Layout from './componants/Layout/Layout'
-import Login from './componants/Auth/Login/Login';
-import Register from './componants/Auth/Register/Register'
-import MainHome from './componants/mainHome/MainHome'
-import Home from './componants/Home/Home'
-import UserContext from './componants/Contexts/UserContext/UserContext';
+import Layout from './components/Layout/Layout'
+import Login from './components/Auth/Login/Login';
+import Register from './components/Auth/Register/Register'
+import MainHome from './components/mainHome/MainHome'
+import Home from './components/Home/Home'
+import UserContext from './components/Contexts/UserContext/UserContext';
 import { SnackbarProvider } from 'notistack';
-import ProductDetails from './componants/ProductDetails/Productdetails';
+import ProductDetails from './components/ProductDetails/Productdetails';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import UserCartContext from "./componants/Contexts/CartContext/CartContext"
+import UserCartContext from "./components/Contexts/CartContext/CartContext"
 import toast, { Toaster } from 'react-hot-toast';
-import Cart from './componants/CartPage/Cart';
-import UserWishListContext from './componants/Contexts/WishlistContext/WishListContext';
-import Wishlist from './componants/WishListPage/Wishlist';
-import Brands from './componants/Brands/Brands';
-import ContactPage from './componants/ContactPage/ContactPage';
-import { FilterProvider } from './componants/Contexts/FilterContext/FilterContext';
-import PlaceOrder from './componants/PlaceOrder/PlaceOrder';
-import Allorders from './componants/AllOrders/AllOrders';
-import ProtectRoots from './componants/ProtectRoots/ProtectRoots';
-import NotFoundPage from './componants/404Page/NotFoundPage';
-import ResatPassword from './componants/RestPassword/ResatPassword';
-import ChangeInfo from './componants/ChangeInfo/ChangeInfo';
+import Cart from './components/CartPage/Cart';
+import UserWishListContext from './components/Contexts/WishlistContext/WishListContext';
+import Wishlist from './components/WishListPage/Wishlist';
+import Brands from './components/Brands/Brands';
+import ContactPage from './components/ContactPage/ContactPage';
+import { FilterProvider } from './components/Contexts/FilterContext/FilterContext';
+import PlaceOrder from './components/PlaceOrder/PlaceOrder';
+import Allorders from './components/AllOrders/AllOrders';
+import ProtectRoots from './components/ProtectRoots/ProtectRoots';
+import NotFoundPage from './components/404Page/NotFoundPage';
+import ResatPassword from './components/RestPassword/ResatPassword';
+import ChangeInfo from './components/ChangeInfo/ChangeInfo';
 
 
 

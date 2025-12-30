@@ -10,20 +10,20 @@ import UserContext from './componants/Contexts/UserContext/UserContext';
 import { SnackbarProvider } from 'notistack';
 import ProductDetails from './componants/ProductDetails/Productdetails';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import UserCartContext from "./componants/Contexts/CartContext/CartContext.jsx"
+import UserCartContext from "./componants/Contexts/CartContext/CartContext"
 import toast, { Toaster } from 'react-hot-toast';
-import Cart from './componants/CartPage/Cart.jsx';
-import UserWishListContext from './componants/Contexts/WishlistContext/WishListContext.jsx';
-import Wishlist from './componants/WishListPage/Wishlist.jsx';
-import Brands from './componants/Brands/Brands.jsx';
-import ContactPage from './componants/ContactPage/ContactPage.jsx';
-import { FilterProvider } from './componants/Contexts/FilterContext/FilterContext.jsx';
-import PlaceOrder from './componants/PlaceOrder/PlaceOrder.jsx';
-import Allorders from './componants/allorders/allorders.jsx';
-import ProtectRoots from './componants/ProtectRoots/ProtectRoots.jsx';
-import NotFoundPage from './componants/404Page/NotFoundPage.jsx';
-import ResatPassword from './componants/RestPassword/ResatPassword.jsx';
-import ChangeInfo from './componants/ChangeInfo/ChangeInfo.jsx';
+import Cart from './componants/CartPage/Cart';
+import UserWishListContext from './componants/Contexts/WishlistContext/WishListContext';
+import Wishlist from './componants/WishListPage/Wishlist';
+import Brands from './componants/Brands/Brands';
+import ContactPage from './componants/ContactPage/ContactPage';
+import { FilterProvider } from './componants/Contexts/FilterContext/FilterContext';
+import PlaceOrder from './componants/PlaceOrder/PlaceOrder';
+import Allorders from './componants/allorders/allorders';
+import ProtectRoots from './componants/ProtectRoots/ProtectRoots';
+import NotFoundPage from './componants/404Page/NotFoundPage';
+import ResatPassword from './componants/RestPassword/ResatPassword';
+import ChangeInfo from './componants/ChangeInfo/ChangeInfo';
 
 
 

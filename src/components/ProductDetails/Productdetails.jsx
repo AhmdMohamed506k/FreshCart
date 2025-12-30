@@ -17,7 +17,7 @@ import twoStarRating from "../../assets/twoStarRating.png";
 import oneAndHalfStarRating from "../../assets/oneAndHalfStarRating.png";
 import oneStarRating from "../../assets/oneStarRating.png";
 import halfStarRating from "../../assets/halfStarRating.png";
-import noRating from "../../assets/noRating.png";
+import noRating from "../../assets/NoRating.png";
 
 
 import { MdOutlineArrowForwardIos } from "react-icons/md";

@@ -19,7 +19,7 @@ import Brands from './componants/Brands/Brands';
 import ContactPage from './componants/ContactPage/ContactPage';
 import { FilterProvider } from './componants/Contexts/FilterContext/FilterContext';
 import PlaceOrder from './componants/PlaceOrder/PlaceOrder';
-import Allorders from './componants/allorders/AllOrders';
+import Allorders from './componants/AllOrders/AllOrders';
 import ProtectRoots from './componants/ProtectRoots/ProtectRoots';
 import NotFoundPage from './componants/404Page/NotFoundPage';
 import ResatPassword from './componants/RestPassword/ResatPassword';

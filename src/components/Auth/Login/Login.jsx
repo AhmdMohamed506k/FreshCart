@@ -138,7 +138,7 @@ export default function Login() {
         <title>Login</title>
 
       </head>
-      <section className={`${style.LoginSection} relative bg-[#031f0c] h-[48rem]`}>
+      <section className={`${style.LoginSection} relative overflow-hidden bg-[#031f0c] h-[48rem] `}>
         <div className={`${style.container} `}>
 
           {/* Blur Background Effects */}
@@ -148,13 +148,13 @@ export default function Login() {
 
 
 
-          <div className={`${style.RegisterForm} absolute left-0 right-0 top-10 bottom-0 z-10 animate__animated animate__backInUp`}>
+          <div className={`${style.RegisterForm} px-5 lg:px-0 absolute left-0 right-0 top-10 bottom-0 z-10 animate__animated animate__backInUp`}>
             <div className="min-h-screen flex items-center justify-center">
               <div className="flex w-[380px] sm:w-[500px] md:w-[850px] lg:w-[900px] rounded-2xl shadow-xl overflow-hidden bg-white">
 
                 {/* Left Section */}
                 <div className={`${style.LoginFormLeftSection} w-full flex flex-col justify-center items-center p-10`}>
-                  <h2 className="text-3xl font-semibold mb-6">Login to you account</h2>
+                  <h2 className="text-2xl lg:text-3xl font-semibold mb-6">Login to you account</h2>
 
 
 
@@ -178,14 +178,14 @@ export default function Login() {
 
 
                     </button>
-                    <p className='ms-auto me-auto text-gray-400 text-[14px] font-bold'>if you forget your password click <Link to={"/ResatPassword"} className='text-green-600   '>Forget password</Link></p>
+                    <p className='ms-auto me-auto text-gray-400 text-[11px] lg:text-[15px] font-bold'>if you forget your password click <Link to={"/ResatPassword"} className='text-green-600   '>Forget password</Link></p>
                   </form>
                 </div>
 
                 {/* Right Section */}
                 <div className="hidden md:flex w-1/2 flex-col justify-center items-center bg-gradient-to-r from-green-500 to-green-700 text-white p-10">
                   <h2 className="md:text-2xl lg:text-3xl font-semibold mb-4">Welcome Back!</h2>
-                  <p className="text-center mb-6">
+                  <p className="text-center  mb-6">
                     If you dont have a account Register now
                   </p>
                   <Link to="/Register" className="border border-white rounded-md px-8 py-2 font-semibold hover:bg-white hover:text-green-700 transition" >

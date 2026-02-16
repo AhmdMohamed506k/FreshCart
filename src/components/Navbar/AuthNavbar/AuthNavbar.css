@@ -12,3 +12,14 @@
     color: green;
     transition: all 0.3s;
 }
+
+
+@media screen and (max-width: 350px) {
+
+.mynavvImg{
+    max-width: 90%;
+ 
+    margin-right: auto;
+}
+
+}

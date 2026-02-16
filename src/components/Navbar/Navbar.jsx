@@ -83,12 +83,12 @@ export default function Navbar() {
     
     <nav ref={navRef} className="fixed z-15 animate__animated animate__fadeIn">
       {/* Main NavBar Container */}
-      <div className=" MainNavContainer max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className=" MainNavContainer  flex  flex-wrap items-center justify-between py-3ذ  w-[94vw] m-auto   ">
 
 
         {/* Main NavBar Logo */}
-        <Link to={"/MainHome"} className=" navLogo flex items-center space-x-3 rtl:space-x-reverse">
-          <img src={navImg} className='w-50 text-white' alt="MainTile" />
+        <Link to={"/MainHome"} className=" navLogo flex items-center  space-x-3 rtl:space-x-reverse ">
+          <img src={navImg} className='w-50 text-white ' alt="MainTile" />
         </Link>
 
 
@@ -102,7 +102,7 @@ export default function Navbar() {
 
 
         {/* Auth navbar links  */}
-        <div className='AuthNavbarLinks hidden xl:block pt-[2.3px] '>
+        <div className='AuthNavbarLinks hidden xl:block '>
           <ul className='flex flex-row gap-4 '>
             <li>
               <NavLink to={'/Login'} className="text-white ">

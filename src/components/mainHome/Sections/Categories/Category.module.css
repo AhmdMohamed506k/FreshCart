@@ -1,23 +1,16 @@
-.container {
-  max-width: 1536px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-
-  overflow: hidden;
-
-}
 
 .flowtCard{
-  background-image: url(../../../../assets/BackGround.png);
+  background-image: url(../../../../assets/assortment-citrus-fruits.png);
   background-position: 0px;
   background-size: cover;
-  color: white;
+ 
 }
 
 
-    
+.container{
+  max-width: 1500px;
+
+}    
         
     
         
@@ -25,55 +18,3 @@
 
 
 
-
-@media (max-width: 1536px) {
-  .container {
-    width: 100%;
- 
-  }
-
- 
- 
- 
-}
-
-/* xl */
-@media (max-width: 1280px) {
-  .container {
-    max-width: 1124px;
-  }
-
- 
-
-
-}
-
-/* lg */
-@media (max-width: 1024px) {
-
-
-}
-
-/* md */
-@media (max-width: 768px) {
-
-
-}
-
-/* sm */
-@media (max-width: 640px) {
- 
- 
-
-
-}
-
-/* xs */
-@media (max-width: 475px) {
-
-
-}
-
-@media (max-width: 320px) {
-
-}

@@ -60,8 +60,8 @@ export const StaggeredMenu = ({
       const offscreen = position === 'left' ? -100 : 100;
       gsap.set([panel, ...preLayers], { xPercent: offscreen });
       gsap.set(plusH, { transformOrigin: '50% 50%', rotate: 0 });
-      gsap.set(plusV, { transformOrigin: '50% 50%', rotate: 90});
-      gsap.set(icon, { rotate: 0, transformOrigin: '50% 50%',});
+      gsap.set(plusV, { transformOrigin: '50% 50%', rotate: 90 });
+      gsap.set(icon, { rotate: 0, transformOrigin: '50% 50%', });
       gsap.set(textInner, { yPercent: 0 });
       if (toggleBtnRef.current) gsap.set(toggleBtnRef.current, { color: menuButtonColor });
     });
@@ -233,19 +233,20 @@ export const StaggeredMenu = ({
     if (!icon) return;
     spinTweenRef.current?.kill();
     if (opening) {
-      
+
       spinTweenRef.current = gsap.to(icon, { rotate: 362, duration: 0.8, ease: 'power4.out', overwrite: 'auto' });
-     
-      
-       plusHRef.current.classList.remove("fa-bars")
-       plusHRef.current.classList.add("fa-x")
-  
-       
+
+
+      plusHRef.current.classList.remove("fa-bars")
+      plusHRef.current.classList.add("fa-x")
+      document.querySelector("body").classList.add("phonelistOpen")
+
     } else {
       spinTweenRef.current = gsap.to(icon, { rotate: 0, duration: 0.35, ease: 'power3.inOut', overwrite: 'auto' });
-       plusHRef.current.classList.add("fa-bars")
-       plusHRef.current.classList.remove("fa-x")
-    
+      plusHRef.current.classList.add("fa-bars")
+      plusHRef.current.classList.remove("fa-x")
+      document.querySelector("body").classList.remove("phonelistOpen")
+
     }
   }, []);
 
@@ -342,24 +343,24 @@ export const StaggeredMenu = ({
 
       {/* Toggle Phone Menu Button */}
       <header className="staggered-menu-header" aria-label="Main navigation header">
-    
+
         <button ref={toggleBtnRef} className="sm-toggle  ms-auto" aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open} aria-controls="staggered-menu-panel" onClick={toggleMenu} type="button" >
           <span ref={textWrapRef} className="sm-toggle-textWrap" aria-hidden="true">
             <span ref={textInnerRef} className="sm-toggle-textInner">
-          
+
             </span>
           </span>
 
-          
-          <span ref={iconRef} className="sm-icon mb-auto" aria-hidden="true">
 
-           
+          <span ref={iconRef} className="sm-icon mb-auto mt-3 " aria-hidden="true">
+
+
             <span ref={plusHRef} className="fa-solid fa-bars fa-xl" />
             <span ref={plusVRef} className="sm-icon-line sm-icon-line-v hidden" />
           </span>
         </button>
       </header>
-       
+
 
       {/*  Phone Menu Body */}
       <aside id="staggered-menu-panel" ref={panelRef} className="staggered-menu-panel  z-10" aria-hidden={!open}>

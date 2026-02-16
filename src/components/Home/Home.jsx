@@ -39,7 +39,7 @@ export default function Home() {
 
   //   =======================UseStates========================================
   const [active, setActive] = useState("grid4");
-  const [isProduct, SetIsProduct] = useState([])
+  const [isProduct, SetIsProduct] = useState([{}])
   const [wishlist, setWishlist] = useState([]);
   const [loading, setLoading] = useState(true);
   const [ProductLoading, setProductLoading] = useState(false);
@@ -238,9 +238,9 @@ export default function Home() {
     </head>
 
 
-    <div onLoad={() => setLoading(false)} className=' bg-gray-50 min-h-screen p-4 md:p-8' >
+    <div onLoad={() => setLoading(false)} className=' bg-gray-50 min-h-screen z-400 p-4 md:p-8' >
 
-      <div className="flex flex-col md:flex-row w-full   xl:w-[85%] xl:mx-auto">
+      <div className="flex flex-col md:flex-row w-full overflow-hidden  xl:w-[85%] xl:mx-auto">
         {/* Sidebar */}
         <aside className="w-full md:w-1/4 lg:w-1/5 bg-gray-50 rounded-xl  p-4 mb-6 md:mb-0 md:mr-6 hidden xl:block " >
           <h2 className="font-semibold text-gray-800 text-lg mb-4">

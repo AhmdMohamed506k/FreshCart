@@ -229,11 +229,12 @@ const AuthNavbar = () => {
 
 
     return (
-        <nav className="w-full xl:h-auto xl:h-[9rem]  bg-white  border-b border-gray-200  top-0 left-0 z-50 relative ">
+        <nav className="w-full xl:h-auto xl:h-[9rem]  z-400 bg-white  border-b border-gray-200  top-0 left-0  relative ">
             {/* top Section */}
-            <div className="flex items-center justify-between px-6 py-3 w-90% xl:w-[81%] mx-auto mt-5  ">
+            <div className="flex items-center justify-between px-4 py-3 w-90% xl:w-[81%] mx-auto mt-5  ">
                 {/* Logo */}
-                <div className="flex items-center space-x-2">  <Link to={"/Home"} > <img src={img} alt="Logo" className="w-full h-9" /> </Link>
+                <div className="flex items-center "> 
+                     <Link to={"/Home"} > <img src={img} alt="Logo" className="mynavvImg w-40 lg:w-full h-9" /> </Link>
 
 
                 </div>
@@ -270,10 +271,10 @@ const AuthNavbar = () => {
 
 
                 {/* Right side */}
-                <div className="flex items-center gap-6 relative right-10 xl:right-0 ">
+                <div className="flex items-center gap-2 lg:gap-6  relative right-7 lg:right-10 xl:right-0 ">
 
                     {/* Avatar + Arrow */}
-                    <div ref={avatarRef} className="flex items-center space-x-1 cursor-pointer" onClick={() => { setUserMenu(!UserMenu) }} >
+                    <div ref={avatarRef} className="flex items-center  cursor-pointer" onClick={() => { setUserMenu(!UserMenu) }} >
                         <div className=" px-2 py-2 rounded-[100%] border">
                             <LuUserRound size={21} />
                         </div>

@@ -1,0 +1,8 @@
+.slick-slider {
+  width: 100% !important;
+  display: block !important;
+}
+
+.slick-list {
+  margin: 0 -8px; /* لموازنة الـ px-2 اللي في الكارد */
+}

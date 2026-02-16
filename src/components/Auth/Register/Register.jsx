@@ -142,7 +142,7 @@ export default function Register() {
 
 
 
-    <section className={`${style.RegisterSection} relative bg-[#031f0c] h-[48rem]`}>
+    <section className={`${style.RegisterSection} relative overflow-hidden bg-[#031f0c] h-[48rem]`}>
       <div className={`${style.container}`}>
 
         {/* Blur Background Effects */}
@@ -153,7 +153,7 @@ export default function Register() {
 
 
 
-        <div className={`${style.RegisterForm} absolute left-0 right-0 top-10 bottom-0 z-10`}>
+        <div className={`${style.RegisterForm} px-5 lg:px-0 absolute left-0 right-0 top-10 bottom-0 z-10`}>
           <div className="min-h-screen flex items-center justify-center">
             <div className="flex w-[380px] sm:w-[500px] md:w-[850px] lg:w-[900px] rounded-2xl shadow-xl overflow-hidden bg-white animate__animated animate__backInUp">
 

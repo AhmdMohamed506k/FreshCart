@@ -69,7 +69,7 @@ export default function BrandsSection() {
 
   return (
 
-    <section className={`${style.BrandsSection} py-20`} >
+    <section className={`${style.BrandsSection} py-20 overflow-hidden`} >
       <div className={`${style.conatiner}`}>
 
 
@@ -116,7 +116,7 @@ export default function BrandsSection() {
 
               text="Inspire and let yourself be inspired, from one unique fashion to another. "
 
-              className="text-[17px] font-semibold text-center text-gray-500"
+              className="text-[17px] font-semibold text-center text-gray-500 px-2"
 
               delay={100}
 

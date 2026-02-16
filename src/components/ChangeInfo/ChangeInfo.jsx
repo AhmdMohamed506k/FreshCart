@@ -191,7 +191,7 @@ export default function ChangeInfo() {
 
                     {/* Buttons */}
 
-                    <div className="flex justify-end gap-3 ms-auto w-80 pt-4 ">
+                    <div className="flex flex-col lg:flex-row justify-end gap-3 ms-auto mb-14 lg:mb-0 w-full pt-4 ">
 
                         <button type="button" className="px-5 py-2   rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-100" >
                             <Link to={"/Home"} >
@@ -209,7 +209,7 @@ export default function ChangeInfo() {
                 </form>
 
 
-                <div className="me-auto  absolute bottom-7 ">
+                <div className="me-auto w-full absolute bottom-7 ">
                     <ChangePasswordModal />
                 </div>
 

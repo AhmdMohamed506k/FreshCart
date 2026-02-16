@@ -1,10 +1,4 @@
-.container {
-  max-width: 1536px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
+
 .OurProductsSection{
   height: 100%;
     background-image: url("../../../../assets/body_bg.png" );
@@ -14,6 +8,11 @@
 
 
 
+.container{
+  max-width: 1400px;
+
+}    
+    
 
 
 .productCard{
@@ -31,55 +30,22 @@ border: 1px solid rgba(255, 255, 255, 0.15);
 
 
 
-
-
-
-
-
-@media (max-width: 1536px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-/* xl */
-@media (max-width: 1280px) {
-  .container {
-    max-width: 1024px;
-  }
-
-}
-
-/* lg */
-@media (max-width: 1024px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-/* md */
-@media (max-width: 768px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-/* sm */
-@media (max-width: 640px) {
-  .container {
-    max-width: 475px;
-  }
-}
-
-/* xs */
-@media (max-width: 475px) {
-  .container {
-    width: 100%;
+@media screen and (min-width: 768px) {
+   .productCard h3{
+    font-size: 15px;
   }
 }
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 350px) {
+
+
+  .productCard h3{
+    font-size: 12px;
+  }
+.productCard p{
+    font-size: 10px;
+  }
 
 }
 

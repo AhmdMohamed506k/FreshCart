@@ -50,31 +50,55 @@ export default function OurProducts() {
 
 
     return <>
-        <section className={`${style.OurProductsSection} bg-[#031f0c] relative  rounded-[7px] `}>
+        <section className={`${style.OurProductsSection} overflow-hidden bg-[#031f0c] relative  rounded-[7px] `}>
             <div className={`${style.contanier}  `}>
 
                 {/* Section Header && Title */}
                 <div className={`OurProductsTitle`}>
 
                     <div className="absolute top-[20%] left-[-30%] w-[80rem] h-[12em]
-              bg-gradient-to-br  from-green-600 to-transparent
-               blur-[990px] opacity-50 rotate-[35deg] z-12 pointer-events-none">
+                  bg-gradient-to-br  from-green-600 to-transparent
+                  blur-[990px] opacity-50 rotate-[35deg] z-12 pointer-events-none">
                     </div>
 
 
 
+           <div className="text-center my-10">
+                <SplitText
 
-                    <div className='h-[35rem] relative z-10'>
-                        <Spline scene="https://prod.spline.design/VCYUjkhi49UBFj7d/scene.splinecode" />
-                        <div className='bg-[#031f0c] w-[100%] h-[10%] z-[11] absolute bottom-0'>
+                    text="Our Products"
 
-                        </div>
-                    </div>
+                    className="text-4xl font-semibold font-semibold text-center text-[#0a9137]"
+
+                    delay={100}
+
+                    duration={0.6}
+
+                    ease="power3.out"
+
+                    splitType="chars"
+
+                    from={{ opacity: 0, y: 40 }}
+
+                    to={{ opacity: 1, y: 0 }}
+
+                    threshold={0.1}
+
+                    rootMargin="-100px"
+
+                    textAlign="center"
+
+                  
+
+                />
+              
+                <p className="text-white mt-0">browse our new Products</p>
+            </div>
 
 
 
 
-                    <div className="absolute top-[20%] right-[-30%] w-[50rem] h-[25em] rotate-[10%]
+                    <div className="absolute top-[20%] right-[0%] w-[100vw] h-[25em] rotate-[10%]
                 bg-gradient-to-br  from-emerald-800 to-transparent
                 blur-[990px] opacity-50 rotate-[30deg] z-11 pointer-events-none">
                     </div>
@@ -99,7 +123,7 @@ export default function OurProducts() {
 
                 </div>
                 {/* Particles */}
-                <div style={{ width: '100%', height: '1200px', position: 'absolute', zIndex: "12", bottom: "60px", left: "25px", top: "30rem" }}>
+                <div style={{ width: '100%', height: '1200px', position: 'absolute', zIndex: "12", bottom: "60px", left: "0", top: "30rem" }}>
                     <Particles
                         particleColors={['#ffffff', '#0a9137']}
                         particleCount={1300}
@@ -143,13 +167,13 @@ function ProductCard({ product }) {
                 <img src={product.images[1]} alt={product.title} className={`w-full rounded-2xl transition-opacity duration-300 ${hovered ? "opacity-100" : "opacity-0"}`} />
             </div>
 
-            <div className="w-[90%] mx-auto pb-4 pt-2 ps-2 text-white flex flex-row mb-2">
-                <div className='w-[50%]'>
-                    <h3>{product.title.split(" ").slice(0, 4).join(" ")}</h3>
+            <div className="w-[90%] lg:w-[100%] mx-auto pb-4 pt-2 ps-2 text-white flex flex-col lg:flex-row flex-nowrap mb-2">
+                <div className=' mb-2 lg:w-[50%] lg:ms-5 '>
+                    <h3 className=''>{product.title.split(" ").slice(0, 2).join(" ")}</h3>
                     <p>{product.price} EGP</p>
                 </div>
-                <div className='w-[50%]  '>
-                   <button className='bg-emerald-700 rounded-xl px-5 py-2 ms-5 mt-1 cursor-pointer transition '>Buy now</button>
+                <div className='  lg:w-[50%]  '>
+                   <button className='bg-emerald-700 rounded-xl px-5 py-2 lg:ms-7 mt-1 cursor-pointer transition '>Buy now</button>
                 </div>
             </div>
         </div>

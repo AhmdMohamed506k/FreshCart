@@ -1,6 +1,6 @@
 import React, { useCallback, useLayoutEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
-import './AuthNavPhoneList.css';
+
 import { NavLink } from 'react-router-dom';
 
 export const StaggeredMenu = ({
@@ -370,7 +370,7 @@ export const StaggeredMenu = ({
        
 
       {/*  Phone Menu Body */}
-      <aside id="staggered-menu-panel" ref={panelRef} className="staggered-menu-panel  z-10" aria-hidden={!open}>
+      <aside id="staggered-menu-panel" ref={panelRef} className="staggered-menu-panel z-401  fixed" aria-hidden={!open}>
         <div className="sm-panel-inner">
           <ul className="sm-panel-list" role="list" data-numbering={displayItemNumbering || undefined}>
             {items && items.length ? (

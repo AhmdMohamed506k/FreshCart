@@ -60,7 +60,7 @@ export default function PhoneFilterList() {
     <>
       {/* Trigger Button (visible only on <1280px) */}
       <div className=" mb-3">
-        <button onClick={() => setOpen(true)} className="xl:hidden  cursor-pointer flex  w-full items-center gap-2 bg-white border border-gray-200 rounded-xl p-3 shadow-sm text-gray-700 font-medium" >
+        <button onClick={() => setOpen(true)} className="xl:hidden z-401  cursor-pointer flex  w-full items-center gap-2 bg-white border border-gray-200 rounded-xl p-3 shadow-sm text-gray-700 font-medium" >
           <SlidersHorizontal className="w-5 h-5" />
           Filter Products
         </button>
@@ -69,7 +69,7 @@ export default function PhoneFilterList() {
         {open && (<div onClick={() => setOpen(false)} className="fixed inset-0 bg-black/40 z-50 xl:hidden" />)}
 
         {/* Drawer */}
-        <div className={`fixed top-0 left-0 h-full w-80 bg-white shadow-xl z-50 p-5 overflow-y-auto transition-transform duration-300 xl:hidden     ${open ? "translate-x-0" : "-translate-x-full"}   `} >
+        <div className={`fixed top-0 left-0 h-full w-80 bg-white shadow-xl z-401 p-5 overflow-y-auto transition-transform duration-300 xl:hidden     ${open ? "translate-x-0" : "-translate-x-full"}   `} >
           {/* Header */}
           <div className="flex justify-between items-center pb-3 border-b">
             <h2 className="text-lg font-semibold">Filter Products</h2>
@@ -110,7 +110,7 @@ export default function PhoneFilterList() {
 
 
             {/* Apply button */}
-            <button className="w-full bg-green-600 text-white py-2 rounded-xl mt-4 font-medium">
+            <button  onClick={() => setOpen(false)} className="w-full bg-green-600 text-white py-2 rounded-xl mt-4 font-medium">
               Apply Filters
             </button>
           </div>

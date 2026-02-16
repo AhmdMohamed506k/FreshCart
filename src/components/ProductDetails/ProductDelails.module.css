@@ -1,0 +1,18 @@
+
+
+@media screen and (max-width: 350px) {
+  
+    .addWishListBtn{
+        font-size:10px;
+    }
+    .addWishListBtnIcon{
+        font-size: 12px;
+    }
+    .addCartBtnIcon{
+             font-size: 11px;
+    }
+    .selectorRow{
+        margin-left:23px;
+    }
+
+}

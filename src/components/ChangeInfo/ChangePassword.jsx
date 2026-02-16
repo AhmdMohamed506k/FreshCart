@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useFormik } from "formik";
+import style from "./ChangePass.module.css"
 import * as yup from "yup";
 import { enqueueSnackbar, useSnackbar } from "notistack";
 import axios from "axios";
@@ -114,13 +115,13 @@ export default function ChangePasswordModal() {
 
 
 
-            <button type="button" className="px-5 py-2 mb-auto cursor-pointer rounded-lg bg-green-600 text-white hover:bg-green-700" onClick={() => setIsOpen(true)}  >
+            <button type="button" className={`${style.passBtn} px-5 py-2  w-70 lg:w-50 mb-auto cursor-pointer rounded-lg bg-green-600 text-white hover:bg-green-700`} onClick={() => setIsOpen(true)}  >
                 Change Password
             </button>
 
             {isOpen && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
-                    <div className="bg-white rounded-xl shadow-lg w-full max-w-md p-6 relative">
+                <div className="fixed inset-0 z-450 flex items-center justify-center bg-black/50">
+                    <div className="bg-white rounded-xl shadow-lg w-full max-w-md p-6 mx-3 lg:mx-0 relative">
 
                         {/* Close */}
                         <button className="absolute top-3 right-3 text-gray-500 hover:text-gray-800 cursor-pointer" onClick={() => setIsOpen(false)} >
@@ -174,7 +175,7 @@ export default function ChangePasswordModal() {
 
             {isClicked && (
                 <div id='loadingBackGround' className=" fixed inset-0  bg-opacity-50 flex items-center justify-center z-50">
-                    <div className="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center gap-3">
+                    <div className="bg-white p-6  rounded-2xl shadow-lg flex flex-col items-center gap-3">
                         <svg className="animate-spin h-10 w-10 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                             <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                             <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>

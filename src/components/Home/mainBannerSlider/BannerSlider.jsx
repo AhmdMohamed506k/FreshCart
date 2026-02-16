@@ -35,8 +35,8 @@ function SimpleSlider() {
     <div className="slider-container w-full  ">
       <Slider {...settings}>
         {[banner4, banner2, banner3, banner1].map((img, index) => (
-          <div key={index} className="px-2"> {/* <— gap here */}
-            <img src={img} className="w-full h-[220px] sm:h-[300px] md:h-[350px] lg:h-[460px]  rounded-2xl cursor-pointer" alt={`banner-${index}`}/>
+          <div key={index} className="lg:px-2"> {/* <— gap here */}
+            <img src={img} className="w-full h-[220px] sm:h-[300px] md:h-[350px] lg:h-[460px]  px-1 rounded-2xl cursor-pointer" alt={`banner-${index}`}/>
           </div>
         ))}
       </Slider>

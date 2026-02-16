@@ -63,7 +63,7 @@ export default function HappyClients() {
     };
 
     return (
-        <section className={` HappyClients relative py-16 px-4 sm:px-8 lg:px-16  bg-[#031f0c] rounded-[8px]`}>
+        <section className={` HappyClients overflow-hidden relative py-16 px-4 sm:px-8 lg:px-16  bg-[#031f0c] rounded-[8px]`}>
             <div className="text-center mb-10">
                 <SplitText
 
@@ -98,7 +98,7 @@ export default function HappyClients() {
 
 
 
-            <div className="absolute top-[20%] left-[-30%] w-[80rem] h-[12em]
+            <div className="absolute top-[20%] left-0  h-[12em]
            bg-gradient-to-br from-green-500 to-transparent
            blur-[990px] opacity-50 rotate-[35deg] z-11 pointer-events-none">
             </div>
@@ -160,19 +160,7 @@ export default function HappyClients() {
            bg-gradient-to-br  from-green-600 to-transparent
            blur-[990px] opacity-50 rotate-[-30deg] z-11 pointer-events-none">
             </div>
-               <div style={{ width: '100%', height: '100%', position: 'absolute', zIndex: "11", bottom: "42rem", left: "25px", top: "0rem" }}>
-                                <Particles
-                                    particleColors={['#ffffff', '#0a9137']}
-                                    particleCount={1000}
-                                    particleSpread={15}
-                                    speed={0.1}
-                                    particleBaseSize={64}
-                                    moveParticlesOnHover={false}
-                                    alphaParticles={false}
-                                    disableRotation={false}
-                                    className={"z-8"}
-                                />
-                 </div>
+       
             
         </section>
     );

@@ -1,17 +1,41 @@
 /* The desktop-first pre-defined media queries: */
 
-.container {
-  max-width: 1536px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
+/* Phone First */
 .HeroSection {
   background-image: url("../../../../../assets/body_bg.png");
   background-size: cover;
   background-position: center;
+  min-height: 100vh;
+  
+   
 }
+.container{
+
+  min-height: 100vh;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.TextDiv{
+  padding: 20px;
+  max-width: 700px;
+  text-align: center;
+  color: white;
+}
+.TextDiv h1{
+
+  font-size: clamp(1.99rem, 5vw, 3rem);
+}
+.TextDiv p{
+font-size: clamp(0.91rem, 1vw + 10px, 1.15rem);
+line-height: 1.6; 
+max-width: 70ch;
+
+}
+
+
 
 #FreshSpan {
   position: relative;
@@ -39,17 +63,7 @@
   right: 0;
   margin-left: 0;
 }
-.LoginButton {
-  position: relative;
-  z-index: 2000;
-  border-radius: 100px;
-  cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
-  padding: 10px 50px;
-}
+
 .registerButton {
   border-radius: 100px;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -63,105 +77,36 @@
 
 
 
+/* تستهدف الشاشات من 320px وحتى 350px (مثل iPhone 5/SE القديم) */
+@media screen and (max-width: 350px) {
 
-
-
-
-/* 2xl */
-@media (max-width: 1536px) {
-  .container {
-    max-width: 1280px;
-  }
+.TextDiv h1{
+  
+  font-size: 1.5rem;
+  margin-bottom: 35px;
 }
 
-/* xl */
-@media (max-width: 1280px) {
-  .container {
-    max-width: 1024px;
-  }
-  .HeroSection p {
-    width: 79%;
-  }
+
+.TextDiv p{
+font-size: 0.7rem;
+margin-bottom: 17px;
+
 }
 
-/* lg */
-@media (max-width: 1024px) {
-  .container {
-    max-width: 768px;
-  }
-  .HeroSection p {
-    width: 100%;
-  }
+.registerButton {
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 5px 30px;
+   position: relative;
+  z-index: 5000;
 }
 
-/* md */
-@media (max-width: 768px) {
-  .container {
-    max-width: 640px;
-  }
-  .HeroSection p {
-    width: 100%;
-  }
-  .LoginButton {
-    font-size: 14px;
-    padding: 7px 40px;
-  }
-  .registerButton {
-    font-size: 14px;
-    padding: 7px 40px;
-  }
 }
 
-/* sm */
-@media (max-width: 640px) {
-  .container {
-    max-width: 475px;
-  }
-  .HeroSection h1 {
-    font-size: 40px;
-  }
-}
 
-/* xs */
-@media (max-width: 475px) {
-  .container {
-    width: 100%;
-  }
-  #FreshSvg {
-    width: 80%;
-  }
-  .HeroSection h1 {
-    font-size: 33px;
-  }
-  .ButtonsGroup {
-    flex-direction: column;
-  }
-  .LoginButton {
-    margin-bottom: 10px;
-    font-size: 14px;
-    padding: 7px 40px;
-  }
-  .registerButton {
-    font-size: 14px;
-    padding: 7px 40px;
-  }
-}
 
-@media screen and (max-width: 320px) {
-  #FreshSvg {
-    width: 80%;
-  }
-  .HeroSection h1 {
-    font-size: 23px;
-  }
-  .LoginButton {
-    font-size: 10px;
-    padding: 7px 40px;
-  }
-  .registerButton {
-    font-size: 10px;
-    padding: 7px 40px;
-  }
-}
 
 /* ======================================= */

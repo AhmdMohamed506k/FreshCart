@@ -18,7 +18,7 @@ import oneAndHalfStarRating from "../../assets/oneAndHalfStarRating.png";
 import oneStarRating from "../../assets/oneStarRating.png";
 import halfStarRating from "../../assets/halfStarRating.png";
 import noRating from "../../assets/NoRating.png";
-
+import style from "./ProductDelails.module.css"
 
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { MyCartContext } from "../Contexts/CartContext/CartContext";
@@ -171,14 +171,14 @@ export default function ProductDetails() {
 
     return (
         <div className="w-full bg-gray-50 pt-8 pb-10">
-            <div className=' flex flex-row  items-center w-[80%] mx-auto mb-5'>
+            <div className={`${style.selectorRow} flex flex-row   items-center w-[90%] lg:w-[80%] ms-10 lg:mx-auto  mb-5`}>
                 <p className='text-[13px]   lg:text-[18px] text-gray-500 hover:text-green-500'> <Link to={"/Home"} > Home </Link> </p>
                 <span className="mt-0.5 ms-1" ><MdOutlineArrowForwardIos /></span>
                 <p className='text-[13px]  lg:text-[18px]  text-gray-500 ms-1'>{product.subcategory[0].name}</p>
                 <span className="mt-0.5 ms-1" ><MdOutlineArrowForwardIos /></span>
                 <p className='text-[13px] lg:text-[18px]  text-green-500 ms-1'>{product.title.split("").slice(0,32).join("") }</p>
             </div>
-            <div className="max-w-7xl mx-auto mb-25 py-10 px-4 w-[80%]  xl:w-[90%]  grid grid-cols-1 md: xl:grid-cols-2 gap-10 border-2 border-gray-100 bg-white rounded-2xl">
+            <div className="max-w-7xl mx-auto mb-25 py-10 px-4 w-[90%]    grid grid-cols-1 md: xl:grid-cols-2 gap-10 border-2 border-gray-100 bg-white rounded-2xl">
                 {/*  Left Section */}
                 <div className="flex flex-col items-center">
                     <img src={mainImage} alt="product" className="rounded-xl w-80 h-auto transition-all duration-300" />
@@ -243,7 +243,7 @@ export default function ProductDetails() {
             </div>
 
             {/*  Tabs Section */}
-            <div className="max-w-7xl mx-auto mt-10 pt-4 border-2 w-[80%] xl:w-[90%] border-[#edeef5] bg-white rounded-2xl">
+            <div className="max-w-7xl mx-auto mt-10 pt-4 border-2 w-[90%]  border-[#edeef5] bg-white rounded-2xl">
                 <div className="border-b-2 border-[#edeef5] mb-4 pb-2 px-4 flex  flex-col   text-start sm:flex-row sm:text-center gap-8 text-gray-600 font-medium">
                     <button onClick={() => setSelectedTab("description")}
                         className={selectedTab === "description" ?
@@ -288,23 +288,21 @@ export default function ProductDetails() {
                     >
                         {wishlist.includes(product._id) ? (
                             <>
-                                <FaHeart className="text-green-600 text-[18px]" />
-                                Added to Wishlist
+                                <FaHeart className={`text-green-600 text-[18px] ${style.addWishListBtnIcon}`} />
+                                <p className={`text-[11px] ${style.addWishListBtn}`}> Added to Wishlist</p>
+                               
                             </>
                         ) : (
                             <>
-                                <FiHeart className="text-[#71778e] text-[18px]" />
-                                Add to Wishlist
+                                <FiHeart className={`text-[#71778e] text-[18px] ${style.addWishListBtnIcon}`}/>
+                                  <p className={`${style.addWishListBtn} text-[11px]  `}> Add to Wishlist</p>
                             </>
                         )}
                     </button>
 
                     {/* Add to Cart Button */}
-                    <button
-                        onClick={() => HandelAddProduct(product._id)}
-                        className="bg-green-600 text-white px-10 py-[10px] rounded-full font-semibold"
-                    >
-                        Add to Cart
+                    <button onClick={() => HandelAddProduct(product._id)} className="bg-green-600 text-white px-10 py-[10px] rounded-full font-semibold"  >
+                       <p className={`text-[13px] ${style.addCartBtnIcon}`}> Add to Cart</p>
                     </button>
                 </div>
             </div>

@@ -192,7 +192,7 @@ export default function ResatPassword() {
       </head>
 
 
-      <section className={`${style.LoginSection} relative bg-[#031f0c] h-[48rem]`}>
+      <section className={`${style.LoginSection} overflow-hidden relative bg-[#031f0c] h-[48rem]`}>
         <div className={`${style.container} `}>
 
           {/* Blur Background Effects */}
@@ -206,13 +206,13 @@ export default function ResatPassword() {
           {!isSuccess ?
 
 
-            <div className={` absolute left-0 right-0 top-10 bottom-0 z-10 animate__animated animate__backInUp`}>
+            <div className={` px-5 lg:px-0 absolute left-0 right-0 top-10 bottom-0 z-10 animate__animated animate__backInUp`}>
               <div className="min-h-screen flex items-center justify-center">
                 <div className="flex w-[380px] sm:w-[500px] md:w-[850px] lg:w-[900px] rounded-2xl shadow-xl overflow-hidden bg-white">
 
                   {/* Left Section */}
                   <div className={`${style.LoginFormLeftSection} w-full flex flex-col justify-center items-center p-10`}>
-                    <h2 className="text-3xl font-semibold mb-6">Resat your password</h2>
+                    <h2 className="text-2xl lg:text-3xl font-semibold mb-6">Resat your password</h2>
 
 
                     {/* Form */}
@@ -250,13 +250,13 @@ export default function ResatPassword() {
             : !isCodeClicked ?
 
 
-              <div className={`absolute left-0 right-0 top-10 bottom-0 z-10 animate__animated animate__backInUp `}>
+              <div className={`absolute px-5 lg:px-0 left-0 right-0 top-10 bottom-0 z-10 animate__animated animate__backInUp `}>
                 <div className="min-h-screen flex items-center justify-center">
                   <div className="flex w-[380px] sm:w-[500px] md:w-[850px] lg:w-[900px] rounded-2xl shadow-xl overflow-hidden bg-white">
 
                     {/* Left Section */}
                     <div className={`${style.LoginFormLeftSection} w-full flex flex-col justify-center items-center p-10`}>
-                      <h2 className="text-3xl font-semibold mb-6">Resat your password</h2>
+                      <h2 className="text-2xl lg:text-3xlfont-semibold mb-6">Resat your password</h2>
 
 
                       {/* Form */}
@@ -275,14 +275,14 @@ export default function ResatPassword() {
 
 
                         </button>
-                        <p className='ms-auto me-auto text-gray-400 text-[14px] font-bold'>Please check the code that we sent to your Email </p>
+                        <p className='ms-auto me-auto text-gray-400  text-[11px] lg:text-[14px] font-bold'>Please check the code that we sent to your Email </p>
                       </form>
                     </div>
 
                     {/* Right Section */}
                     <div className="hidden md:flex w-1/2 flex-col justify-center items-center bg-gradient-to-r from-green-500 to-green-700 text-white p-10">
                       <h2 className="md:text-2xl lg:text-3xl font-semibold mb-4">Fresh Cart</h2>
-                      <p className="text-center mb-6">
+                      <p className="text-center  mb-6">
                         Use this input to get the resat code continue resating your password
                       </p>
 
@@ -293,13 +293,13 @@ export default function ResatPassword() {
 
               :
 
-              <div className={`absolute left-0 right-0 top-10 bottom-0 z-10 animate__animated animate__backInUp `}>
+              <div className={`absolute px-5 lg:px-0 left-0 right-0 top-10 bottom-0 z-10 animate__animated animate__backInUp `}>
                 <div className="min-h-screen flex items-center justify-center">
                   <div className="flex w-[380px] sm:w-[500px] md:w-[850px] lg:w-[900px] rounded-2xl shadow-xl overflow-hidden bg-white">
 
                     {/* Left Section */}
                     <div className={`${style.LoginFormLeftSection} w-full flex flex-col justify-center items-center p-10`}>
-                      <h2 className="text-3xl font-semibold mb-6">Resat your password</h2>
+                      <h2 className="text-2xl lg:text-3xl font-semibold mb-6">Resat your password</h2>
 
 
                       {/* Form */}
@@ -324,7 +324,7 @@ export default function ResatPassword() {
 
 
                         </button>
-                        <p className='ms-auto me-auto text-gray-400 text-[14px] font-bold'>Please check the code that we sent to your Email </p>
+                        <p className='ms-auto me-auto text-gray-400 text-[11px] lg:text-[14px] font-bold'>Please check the code that we sent to your Email </p>
                       </form>
                     </div>
 

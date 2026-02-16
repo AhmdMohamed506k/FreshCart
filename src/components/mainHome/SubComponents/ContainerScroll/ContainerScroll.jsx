@@ -33,14 +33,17 @@ export const ContainerScroll = ({
   const translate = useTransform(scrollYProgress, [0, 1], [0, -100]);
 
   return (
-    <div className={`${style.bannerheader}   sm:h-[22rem]   xl:mb-20  flex items-center justify-center relative p-2  md:p-20 z-9`} ref={containerRef}>
-      <div className={`${style.container} py-12 md:py-420 w-full relative`} style={{ perspective: "1000px", }}>
+
+    
+    <div className={`${style.bannerheader}         `} ref={containerRef}>
+      <div className={`${style.container}  mb-auto relative bottom-[20vh] z-359  `} style={{ perspective: "1000px", }}>
         <Header translate={translate} titleComponent={titleComponent} />
-        <Card rotate={rotate} translate={translate} scale={scale}>
+        <Card rotate={rotate} className={``} translate={translate} scale={scale}>
           {children}
         </Card>
       </div>
     </div>
+
   );
 };
 
@@ -49,6 +52,7 @@ export const Header = ({
   titleComponent
 }) => {
   return (
+    
     <motion.div style={{ translateY: translate, }}
       className="div max-w-5xl mx-auto text-center">
       {titleComponent}

@@ -66,10 +66,10 @@ export default function PhoneFilterList() {
         </button>
 
         {/* Overlay */}
-        {open && (<div onClick={() => setOpen(false)} className="fixed inset-0 bg-black/40 z-50 xl:hidden" />)}
+        {open && (<div onClick={() => setOpen(false)} className="fixed inset-0 bg-black/40 z-450 xl:hidden" />)}
 
         {/* Drawer */}
-        <div className={`fixed top-0 left-0 h-full w-80 bg-white shadow-xl z-401 p-5 overflow-y-auto transition-transform duration-300 xl:hidden     ${open ? "translate-x-0" : "-translate-x-full"}   `} >
+        <div className={`fixed top-0 left-0 h-full w-80 bg-white shadow-xl z-451 p-5 overflow-y-auto transition-transform duration-300 xl:hidden     ${open ? "translate-x-0" : "-translate-x-full"}   `} >
           {/* Header */}
           <div className="flex justify-between items-center pb-3 border-b">
             <h2 className="text-lg font-semibold">Filter Products</h2>

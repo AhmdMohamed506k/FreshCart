@@ -130,7 +130,7 @@
 
 .staggered-menu-panel {
   position: absolute;
-  top: -60px ;
+  top: -64px ;
   left: 0 !important;
   width: clamp(260px, 38vw, 420px);
   min-height: 102vh ;
@@ -140,7 +140,7 @@
   -webkit-backdrop-filter: blur(12px);
   display: flex;
   flex-direction: column;
-  padding: 0em 2em 9em 2em;
+  padding: 1.8em 2em 9em 2em;
   overflow-y: auto;
   z-index: 400;
   
@@ -336,8 +336,8 @@
 @media screen and (max-width: 350px) {
 
 .staggered-menu-panel {
-  top: -55px !important;
-    padding: 0em 2em 6em 2em;
+  top: -64px !important;
+    padding: 0em 2em 5em 2em;
 }
 .sm-socials-list{
 
@@ -349,7 +349,7 @@ padding: 0;
 }
 @media screen and (min-width: 768px) {
    .staggered-menu-panel{
-     top: -55px;
+     top: -65px;
    }
 }
  @media screen and (min-width: 1280px) {  /*small Phones */

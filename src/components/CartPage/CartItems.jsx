@@ -64,9 +64,9 @@ export default function CartItems() {
             <iframe className=' scale-255 absolute top-30 bottom-0 left-0 right-0 ms-auto me-auto' src="https://lottie.host/embed/22fbc466-8c58-4ed0-8d1f-511dffe6c348/Hbx0EEI7tT.lottie"></iframe>
           </div>
         ) : (AllProducts?.map((p) => (
-          <div key={p._id} className="flex gap-4 mb-10">
+          <div key={p._id} className="flex flex-col  lg:flex-row  gap-4 mb-10 ">
             {/* Thumbnail */}
-            <img src={p.product.imageCover} alt="Product" className="w-28 h-32 object-cover rounded" />
+            <img src={p.product.imageCover} alt="Product" className="w-28 h-32 mx-auto lg:mx-0 object-cover rounded" />
             {/* Info */}
             <div className="flex-1">
               <h2 className="text-lg font-semibold">{p.product.title}</h2>
@@ -90,14 +90,14 @@ export default function CartItems() {
             </div>
 
             {/* Price / Qty / Total */}
-            < div className="flex flex-col items-end gap-2" >
-              <div className="text-right">
-                <p className="text-sm text-gray-500 mb-2">Total Price</p>
-                <p className="font-semibold">{p.price} EGP</p>
+            < div className="flex  flex-row lg:flex-col  items-end justify-center gap-2" >
+              <div className="text-right flex flex-row items-center gap-2 lg:flex-col">
+                <p className="text-sm text-gray-500 lg:mb-0 ">Total Price:</p>
+                <p className="font-semibold">{p.price}EGP</p>
               </div>
 
               {/* Qty */}
-              < select className="border rounded px-2 py-1 text-sm" >
+              < select className="border rounded px-2 py-1 text-sm ms-auto" >
                 <option hidden>{p.count}</option>
                 {
                   [1, 2, 3, 4, 5].map((num) => (

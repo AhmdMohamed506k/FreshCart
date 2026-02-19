@@ -21,7 +21,7 @@ export default function OrderSummary() {
       <div className="flex mb-4">
         <input
           type="text"
-          className="flex-1 border border-gray-300 rounded-l-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500"
+          className="flex-1 w-full border border-gray-300 rounded-l-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500"
           placeholder="Promo Code"
           disabled={NumOfCartItems === 0} // disables input if cart is empty
         />

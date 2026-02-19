@@ -19,7 +19,8 @@
 .mynavvImg{
     max-width: 90%;
  
-    margin-right: auto;
+    margin-right: 50px;
+    margin-left: -16px;
 }
 
 }

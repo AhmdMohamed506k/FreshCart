@@ -148,7 +148,7 @@ export default function Login() {
 
 
 
-          <div className={`${style.RegisterForm} px-5 lg:px-0 absolute left-0 right-0 top-10 bottom-0 z-10 animate__animated animate__backInUp`}>
+          <div className={`${style.RegisterForm} px-5 lg:px-0 absolute left-0 right-0 top-5 bottom-0 z-10 animate__animated animate__backInUp`}>
             <div className="min-h-screen flex items-center justify-center">
               <div className="flex w-[380px] sm:w-[500px] md:w-[850px] lg:w-[900px] rounded-2xl shadow-xl overflow-hidden bg-white">
 

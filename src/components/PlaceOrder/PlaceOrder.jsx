@@ -109,7 +109,7 @@ export default function PlaceOrder() {
             </head>
 
             {loading && (
-                <div id='loadingBackGround' className=" fixed inset-0  bg-opacity-50 flex items-center justify-center z-50">
+                <div id='loadingBackGround' className=" fixed inset-0  bg-opacity-50 flex items-center justify-center z-450">
                     <div className="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center gap-3">
                         <svg className="animate-spin h-10 w-10 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                             <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
@@ -119,9 +119,9 @@ export default function PlaceOrder() {
                     </div>
                 </div>
             )}
-            <div className="h-full bg-gray-50 flex justify-center px-20 p-4">
-                <div className="relative py-10 sm:max-w-xl sm:mx-auto">
-                    <div className="relative px-4 py-10 bg-white mx-8 md:mx-0 shadow rounded-3xl sm:p-10 border border-green-400">
+            <div className="h-full bg-gray-50 flex justify-center px-0 ">
+                <div className="relative py-10  sm:mx-auto">
+                    <div className="relative px-4 py-8 bg-white mx-3 md:mx-0 shadow rounded-3xl sm:p-10 border border-green-400">
                         <div className="max-w-md mx-auto">
 
                             {/* address form!! */}
@@ -149,12 +149,12 @@ export default function PlaceOrder() {
                                 <div className="flex justify-center items-center mt-4">
                                     <div className="w-full">
 
-                                        <button onClick={() => { setUserChoice(true); orderFormik.handleSubmit(); }} className="cursor-pointer flex items-center justify-center py-2 px-20 bg-white hover:bg-gray-200 text-gray-700 w-full transition ease-in duration-200 text-base font-semibold shadow-md rounded-lg">
-                                            <img style={{ width: "12%" }} src="https://cdn-icons-png.flaticon.com/512/5359/5359689.png" alt="Cash" />
+                                        <button onClick={() => { setUserChoice(true); orderFormik.handleSubmit(); }} className="cursor-pointer flex items-center justify-center py-2 lg:px-10 bg-white hover:bg-gray-200 text-gray-700 w-full transition ease-in duration-200 text-base font-semibold shadow-md rounded-lg">
+                                            <img className='w-[35px]' src="https://cdn-icons-png.flaticon.com/512/5359/5359689.png" alt="Cash" />
                                             <span className="ms-2 mb-2">Cash Order</span>
                                         </button>
 
-                                        <button onClick={() => { setUserChoice(false); orderFormik.handleSubmit(); }} className="cursor-pointer flex items-center justify-center py-2 px-20 bg-white hover:bg-gray-200 text-gray-700 w-full transition ease-in duration-200 text-base font-semibold shadow-md rounded-lg mt-4">
+                                        <button onClick={() => { setUserChoice(false); orderFormik.handleSubmit(); }} className="cursor-pointer flex items-center justify-center py-2 lg:px-10 bg-white hover:bg-gray-200 text-gray-700 w-full transition ease-in duration-200 text-base font-semibold shadow-md rounded-lg mt-4">
                                             <img style={{ width: "12%" }} src="https://cdn-icons-png.flaticon.com/512/639/639365.png" alt="Online" />
                                             <span className="ms-2 mb-2">Online Pay</span>
                                         </button>
@@ -164,7 +164,7 @@ export default function PlaceOrder() {
 
                             </form>
 
-                            <div className="flex items-center justify-between mt-4">
+                            <div className="flex text-center  items-center justify-between mt-4">
                                 <span className="w-1/5 border-b md:w-1/4" />
                                 <Link to="/Home" className="text-xs text-green-500 uppercase hover:underline">
                                     Thank you for using FreshCart

@@ -1,16 +1,80 @@
-# React + Vite
+# FreshCart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern e-commerce storefront built with React, deployed live on production. Personal frontend project.
 
-Currently, two official plugins are available:
+**Live demo:** `TODO: add URL`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> **Draft:** items marked `TODO` still need your input.
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+FreshCart is a single-page shopping app: browse products, view details, manage a cart, and complete the shopping flow with a polished, animated interface.
 
-## Expanding the ESLint configuration
+`TODO:` replace with 2-3 sentences on what the app does and what you focused on.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+| Area | Technology |
+|---|---|
+| Framework | React 18, Vite 6 |
+| Routing | React Router 7 |
+| Data fetching | Axios, React Query |
+| Forms and validation | Formik, Yup, Zod |
+| Styling | Tailwind CSS 4, clsx, tailwind-merge |
+| Animation | GSAP, Framer Motion, Spline (3D), OGL (WebGL) |
+| UI feedback | React Hot Toast, Notistack, SweetAlert2 |
+| UI components | Slick carousel, Lucide, React Icons, Font Awesome |
+| SEO | React Helmet |
+| Backend / auth | Firebase (`TODO`: say exactly what it is used for) |
+
+## Features
+
+`TODO:` tick only what exists in the app.
+
+- [ ] Product listing and details
+- [ ] Cart (add, remove, update quantity)
+- [ ] Wishlist
+- [ ] Authentication (register / login)
+- [ ] Checkout / orders
+- [ ] Search and filtering
+- [ ] Responsive layout
+- [ ] Animated hero and transitions
+
+## Data Source
+
+`TODO:` which API provides the products and cart (your own backend, a public API, Firebase)? Keep this line honest: this repo is the frontend only.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+
+### Installation
+
+```bash
+git clone https://github.com/AhmdMohamed506k/<repo-name>.git
+cd <repo-name>
+npm install
+```
+
+### Scripts
+
+```bash
+npm run dev       # start the dev server
+npm run build     # production build
+npm run preview   # preview the production build
+npm run lint      # run ESLint
+```
+
+### Environment variables
+
+`TODO:` list any required `.env` variables (for example Firebase keys), or delete this section.
+
+## Screenshots
+
+`TODO:` add 2-3 screenshots (home, product, cart).
+
+## Author
+
+**Ahmed Mohamed**: [GitHub](https://github.com/AhmdMohamed506k)

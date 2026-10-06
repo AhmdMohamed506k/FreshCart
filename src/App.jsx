@@ -33,8 +33,7 @@ const queryClient = new QueryClient()
 function App() {
   const istoken = localStorage.getItem("Token")
   const router = createBrowserRouter([
-    {
-      element: <Layout />,
+    { element: <Layout />,
       children: [
         // Public Pages
         { index: true, element: istoken ? <Home /> : <MainHome /> },
